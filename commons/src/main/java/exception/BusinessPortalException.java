@@ -1,6 +1,6 @@
 package exception;
 
-import response.common.ResponseError;
+import response.ResponseError;
 
 public class BusinessPortalException extends RuntimeException {
 

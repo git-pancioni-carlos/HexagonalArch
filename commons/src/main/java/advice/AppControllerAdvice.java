@@ -1,4 +1,4 @@
-package controller.advice;
+package advice;
 
 import exception.BusinessPortalException;
 import org.springframework.http.HttpStatus;

@@ -1,4 +1,4 @@
-package response.common;
+package response;
 
 public enum ResponseError {
 

@@ -3,7 +3,8 @@ package controller;
 import org.springframework.web.bind.annotation.*;
 import request.AddUserRequest;
 import request.UpdateUserRequest;
-import response.common.Response;
+import response.Response;
+import response.UserResponse;
 import response.presentation.GetAllUsersResponse;
 
 import java.math.BigInteger;
@@ -16,7 +17,7 @@ public interface UserController {
     Response<GetAllUsersResponse> getUsers();
 
     @GetMapping(value = REST_SECTION + "findById", produces = "application/json")
-    Response<GetAllUsersResponse> getUser(@RequestParam(value = "id", required = true) final BigInteger id);
+    Response<UserResponse> getUser(@RequestParam(value = "id", required = true) final BigInteger id);
 
     @PostMapping(value = REST_SECTION + "add", produces = "application/json")
     Response addUser(@RequestBody AddUserRequest request);
